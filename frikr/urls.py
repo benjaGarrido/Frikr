@@ -20,6 +20,6 @@ from photos import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    re_path(r'^photos/(?P<pk>[0-9]+)/$', views.detail, name='detail'),
+    path('', views.home, name='photos_home'),
+    re_path(r'^photos/(?P<pk>[0-9]+)/$', views.detail, name='photo_detail'),
 ]
