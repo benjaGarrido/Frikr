@@ -2,7 +2,8 @@
 
 {% block title %} Login {% endblock %}
 {% block section %}
-    <form>
+    <form method="post">
+        {% csrf_token %}
         <div>
             <input type="text" name="usr" placeholder="Nombre de usuario">
         </div>
